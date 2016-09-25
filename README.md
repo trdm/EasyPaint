@@ -35,5 +35,3 @@ License
 EasyPaint is distributed under the [MIT license](http://www.opensource.org/licenses/MIT).
 
 ![screenshot](https://github.com/trdm/EasyPaint/blob/master/AddArrow.png)
-![screenshot](https://github.com/trdm/EasyPaint/AddArrow.png)
-![screenshot](AddArrow.png)
