@@ -67,7 +67,7 @@ EffectSettingsDialog::EffectSettingsDialog(const QImage &img, AbstractEffectSett
 
 QRgb EffectSettingsDialog::convolutePixel(const QImage &image, int x, int y, const QList<double> &kernelMatrix)
 {
-    int kernelSize = sqrt(kernelMatrix.size());
+    int kernelSize = sqrt(double(kernelMatrix.size()));
 
     double total = 0;
     double red = 0;

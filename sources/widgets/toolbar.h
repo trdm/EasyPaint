@@ -61,7 +61,7 @@ private:
      */
     QToolButton* createToolButton(QAction *act);
 
-    QToolButton *mCursorButton, *mEraserButton, *mPenButton, *mLineButton,
+    QToolButton *mCursorButton, *mEraserButton, *mPenButton, *mLineButton, *mArrowButton,
                 *mColorPickerButton, *mMagnifierButton, *mSprayButton, *mFillButton,
                 *mRectangleButton, *mEllipseButton, *mCurveButton, *mTextButton;
     ColorChooser *mPColorChooser, *mSColorChooser;

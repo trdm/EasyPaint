@@ -52,7 +52,7 @@ DataSingleton* DataSingleton::Instance()
 
 void DataSingleton::readSetting()
 {
-    QSettings settings;
+    QSettings settings(QSettings::NativeFormat,QSettings::UserScope,"QtDesktop","EasyPaint");
     mBaseSize = settings.value("/Settings/BaseSize", QSize(400, 300)).toSize();
     mIsAutoSave = settings.value("/Settings/IsAutoSave", false).toBool();
     mAutoSaveInterval = settings.value("/Settings/AutoSaveInterval", 300).toInt();
@@ -60,6 +60,7 @@ void DataSingleton::readSetting()
     mAppLanguage = settings.value("/Settings/AppLanguage", "system").toString();
     mIsRestoreWindowSize = settings.value("/Settings/IsRestoreWindowSize", true).toBool();
     mIsAskCanvasSize = settings.value("/Settings/IsAskCanvasSize", true).toBool();
+    m_usingNativeDialog = settings.value("/Settings/UsingNativeDialog", true).toBool();
 
     //read shortcuts for file menu
     mFileShortcuts.insert("New", settings.value("/Shortcuts/File/New", QKeySequence(QKeySequence::New)).value<QKeySequence>());
@@ -99,13 +100,14 @@ void DataSingleton::readSetting()
 
 void DataSingleton::writeSettings()
 {
-    QSettings settings;
+    QSettings settings(QSettings::NativeFormat,QSettings::UserScope,"QtDesktop","EasyPaint");
     settings.setValue("/Settings/BaseSize", mBaseSize);
     settings.setValue("/Settings/IsAutoSave", mIsAutoSave);
     settings.setValue("/Settings/AutoSaveInterval", mAutoSaveInterval);
     settings.setValue("/Settings/HistoryDepth", mHistoryDepth);
     settings.setValue("/Settings/AppLanguage", mAppLanguage);
     settings.setValue("/Settings/IsRestoreWindowSize", mIsRestoreWindowSize);
+    settings.setValue("/Settings/UsingNativeDialog", m_usingNativeDialog);
     settings.setValue("/Settings/IsAskCanvasSize", mIsAskCanvasSize);
 
     //write shortcuts for file menu

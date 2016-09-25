@@ -28,6 +28,7 @@
 #include <QtCore/QDebug>
 #include <QtCore/QFile>
 #include <QtCore/QTranslator>
+#include <QDebug>
 
 #include "mainwindow.h"
 #include "datasingleton.h"
@@ -50,7 +51,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     a.setApplicationName("EasyPaint");
-    a.setApplicationVersion("0.1.1");
+    a.setApplicationVersion("0.1.2");
 
     QStringList args = a.arguments();
 
@@ -98,18 +99,24 @@ int main(int argc, char *argv[])
         printVersion();
         return 0;
     }
-
     QTranslator appTranslator;
     QString translationsPath("/usr/share/easypaint/translations/");
+    QString trFileName = "";
+#ifdef Q_OS_WIN32
+     translationsPath = qApp->applicationDirPath()+"/"; //+"/translations/";
+#endif
+     qDebug() << translationsPath;
+
+
     QString appLanguage = DataSingleton::Instance()->getAppLanguage();
-    if(appLanguage == "system")
-    {
-        appTranslator.load(translationsPath + "easypaint_" + QLocale::system().name());
+    if(appLanguage == "system")    {
+        trFileName = translationsPath + "easypaint_" + QLocale::system().name();
     }
-    else
-    {
-        appTranslator.load(translationsPath + appLanguage);
+    else    {
+        trFileName = translationsPath + appLanguage;
     }
+    appTranslator.load(trFileName);
+    //qDebug() << trFileName ;
     a.installTranslator(&appTranslator);
 
     MainWindow w(filePaths);

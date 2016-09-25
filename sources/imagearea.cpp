@@ -30,6 +30,7 @@
 #include "instruments/abstractinstrument.h"
 #include "instruments/pencilinstrument.h"
 #include "instruments/lineinstrument.h"
+#include "instruments/arrowinstrument.h"
 #include "instruments/eraserinstrument.h"
 #include "instruments/rectangleinstrument.h"
 #include "instruments/ellipseinstrument.h"
@@ -140,6 +141,7 @@ ImageArea::ImageArea(const bool &isOpen, const QString &filePath, QWidget *paren
     mInstrumentsHandlers[CURSOR] = selectionInstrument;
     mInstrumentsHandlers[PEN] = new PencilInstrument(this);
     mInstrumentsHandlers[LINE] = new LineInstrument(this);
+    mInstrumentsHandlers[ARROW] = new ArrowInstrument(this);
     mInstrumentsHandlers[ERASER] = new EraserInstrument(this);
     mInstrumentsHandlers[RECTANGLE] = new RectangleInstrument(this);
     mInstrumentsHandlers[ELLIPSE] = new EllipseInstrument(this);
@@ -175,13 +177,19 @@ void ImageArea::initializeImage()
 void ImageArea::open()
 {
     QString fileName(mFilePath);
+    //QString mOpenFilter = "All supported (*.bmp *.gif *.ico *.jpeg *.jpg *.mng *.pbm *.pgm *.png *.ppm *.svg *.svgz *.tif *.tiff *.xbm *.xpm);;Portable Network Graphics(*.png);;Windows Bitmap(*.bmp);;Graphic Interchange Format(*.gif);;Joint Photographic Experts Group(*.jpg *.jpeg);;Multiple-image Network Graphics(*.mng);;Portable Bitmap(*.pbm);;Portable Graymap(*.pgm);;Portable Pixmap(*.ppm);;Tagged Image File Format(*.tiff, *tif);;X11 Bitmap(*.xbm);;X11 Pixmap(*.xpm);;Scalable Vector Graphics(*.svg);;All Files(*.*)";
+
     QFileDialog dialog(this, tr("Open image..."), "", mOpenFilter);
     QString prevPath = DataSingleton::Instance()->getLastFilePath();
-
     if (!prevPath.isEmpty())
         dialog.selectFile(prevPath);
     else
         dialog.setDirectory(QDir::homePath());
+    if (DataSingleton::Instance()->getUsingNativeDialog()){
+        QFileDialog::Options opt;
+        opt |= QFileDialog::DontUseNativeDialog;
+        dialog.setOptions(opt);
+    }
 
     if (dialog.exec())
     {
@@ -237,13 +245,20 @@ bool ImageArea::saveAs()
     QString filter;
     QString fileName(mFilePath);
     clearSelection();
-    if(fileName.isEmpty())
-    {
+    if(fileName.isEmpty())    {
         fileName = QDir::homePath() + "/" + tr("Untitled image") + ".png";
+        #ifdef Q_OS_WIN32
+            fileName = tr("Untitled image") + ".png";
+        #endif
+
+    }
+    QFileDialog::Options opt = QFileDialog::DontUseNativeDialog;
+    if (DataSingleton::Instance()->getUsingNativeDialog()){
+        opt ^= QFileDialog::DontUseNativeDialog;
     }
     QString filePath = QFileDialog::getSaveFileName(this, tr("Save image..."), fileName, mSaveFilter,
                                                     &filter,
-                                                    QFileDialog::DontUseNativeDialog);
+                                                    opt);
 
     QApplication::setOverrideCursor(Qt::WaitCursor);
     //parse file extension
@@ -472,7 +487,7 @@ void ImageArea::restoreCursor()
         mCurrentCursor = new QCursor(*mPixmap);
         setCursor(*mCurrentCursor);
         break;
-    case RECTANGLE: case ELLIPSE: case LINE: case CURVELINE: case TEXT:
+    case RECTANGLE: case ELLIPSE: case LINE: case ARROW: case CURVELINE: case TEXT:
         mCurrentCursor = new QCursor(Qt::CrossCursor);
         setCursor(*mCurrentCursor);
         break;
@@ -496,7 +511,7 @@ void ImageArea::drawCursor()
     QPoint center(13, 13);
     switch(DataSingleton::Instance()->getInstrument())
     {
-    case NONE_INSTRUMENT: case LINE: case COLORPICKER: case MAGNIFIER: case  SPRAY:
+    case NONE_INSTRUMENT: case LINE: case ARROW: case COLORPICKER: case MAGNIFIER: case  SPRAY:
     case FILL: case RECTANGLE: case ELLIPSE: case CURSOR: case INSTRUMENTS_COUNT:
     case CURVELINE: case TEXT:
         break;
@@ -507,7 +522,7 @@ void ImageArea::drawCursor()
     painter.begin(mPixmap);
     switch(DataSingleton::Instance()->getInstrument())
     {
-    case NONE_INSTRUMENT: case LINE: case COLORPICKER: case MAGNIFIER: case  SPRAY:
+    case NONE_INSTRUMENT: case LINE: case ARROW: case COLORPICKER: case MAGNIFIER: case  SPRAY:
     case FILL: case RECTANGLE: case ELLIPSE: case CURSOR: case INSTRUMENTS_COUNT:
     case CURVELINE: case TEXT:
         break;

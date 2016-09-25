@@ -30,39 +30,40 @@
 <context>
     <name>ImageArea</name>
     <message>
-        <location filename="../imagearea.cpp" line="133"/>
+        <location filename="../imagearea.cpp" line="182"/>
         <source>Open image...</source>
         <translation>Открыть изображение...</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="214"/>
+        <location filename="../imagearea.cpp" line="222"/>
         <source>Error opening file</source>
         <translation>Ошибка открытия файла</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="214"/>
+        <location filename="../imagearea.cpp" line="222"/>
         <source>Can&apos;t open file &quot;%1&quot;.</source>
         <translation>Не удаётся открыть файл &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="227"/>
-        <location filename="../imagearea.cpp" line="277"/>
+        <location filename="../imagearea.cpp" line="235"/>
+        <location filename="../imagearea.cpp" line="292"/>
         <source>Error saving file</source>
         <translation>Ошибка сохранения файла</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="227"/>
-        <location filename="../imagearea.cpp" line="277"/>
+        <location filename="../imagearea.cpp" line="235"/>
+        <location filename="../imagearea.cpp" line="292"/>
         <source>Can&apos;t save file &quot;%1&quot;.</source>
         <translation>Не удаётся сохранить файл &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="190"/>
+        <location filename="../imagearea.cpp" line="249"/>
+        <location filename="../imagearea.cpp" line="251"/>
         <source>Untitled image</source>
         <translation>Безымянный</translation>
     </message>
     <message>
-        <location filename="../imagearea.cpp" line="192"/>
+        <location filename="../imagearea.cpp" line="259"/>
         <source>Save image...</source>
         <translation>Сохранить изображение...</translation>
     </message>
@@ -74,140 +75,145 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="94"/>
-        <location filename="../mainwindow.cpp" line="444"/>
-        <location filename="../mainwindow.cpp" line="492"/>
-        <location filename="../mainwindow.cpp" line="499"/>
+        <location filename="../mainwindow.cpp" line="101"/>
+        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="544"/>
+        <location filename="../mainwindow.cpp" line="551"/>
         <source>Untitled Image</source>
         <translation>Безымянный</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="149"/>
         <source>&amp;New</source>
         <translation>&amp;Новый</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="148"/>
+        <location filename="../mainwindow.cpp" line="155"/>
         <source>&amp;Open</source>
         <translation>&amp;Открыть</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="154"/>
+        <location filename="../mainwindow.cpp" line="161"/>
         <source>&amp;Save</source>
         <translation>&amp;Сохранить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="160"/>
+        <location filename="../mainwindow.cpp" line="167"/>
         <source>Save as...</source>
         <translation>Сохранить как...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
+        <location filename="../mainwindow.cpp" line="173"/>
         <source>&amp;Close</source>
         <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="181"/>
         <source>&amp;Print</source>
         <translation>&amp;Печать</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="182"/>
+        <location filename="../mainwindow.cpp" line="189"/>
         <source>&amp;Exit</source>
         <translation>&amp;Выход</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="195"/>
         <source>&amp;Edit</source>
         <translation>&amp;Правка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="197"/>
         <source>&amp;Undo</source>
         <translation>&amp;Отменить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="196"/>
+        <location filename="../mainwindow.cpp" line="203"/>
         <source>&amp;Redo</source>
         <translation>&amp;Повторить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="204"/>
+        <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Copy</source>
         <translation>&amp;Копировать</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Paste</source>
         <translation>&amp;Вставить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
+        <location filename="../mainwindow.cpp" line="224"/>
         <source>C&amp;ut</source>
         <translation>Выр&amp;езать</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="226"/>
+        <location filename="../mainwindow.cpp" line="233"/>
         <source>&amp;Settings</source>
         <translation>&amp;Параметры</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Instruments</source>
         <translation>&amp;Инструменты</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="284"/>
+        <source>Arrow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="326"/>
         <source>Text</source>
         <translation>Текст</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="346"/>
         <source>Binarization</source>
         <translation>Бинаризация</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>Gaussian Blur</source>
         <translation>Гауссовское размытие</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>Gamma</source>
         <translation>Гамма</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="354"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>Sharpen</source>
         <translation>Резкость</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>Custom</source>
         <translation>Настраиваемый</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="373"/>
         <source>Image size...</source>
         <translation>Размер изображения...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="377"/>
         <source>Canvas size...</source>
         <translation>Размер холста...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Counter-clockwise</source>
         <translation>Против часовой</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="389"/>
         <source>Clockwise</source>
         <translation>По часовой</translation>
     </message>
@@ -228,22 +234,22 @@
         <translation type="obsolete">Лупа</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="270"/>
         <source>Pen</source>
         <translation>Карандаш</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Line</source>
         <translation>Линия</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>Spray</source>
         <translation>Спрэй</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="298"/>
         <source>Fill</source>
         <translation>Заливка</translation>
     </message>
@@ -252,72 +258,70 @@
         <translation type="obsolete">Прямоугольник</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>Selection</source>
         <translation>Выделение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Eraser</source>
         <translation>Ластик</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>Color picker</source>
         <translation>Пипетка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="256"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Magnifier</source>
         <translation>Лупа</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>Rectangle</source>
         <translation>Эллипс</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="298"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Ellipse</source>
         <translation>Эллипс</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="319"/>
         <source>Curve</source>
         <translation>Кривая</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>E&amp;ffects</source>
         <translation>&amp;Эффекты</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Gray</source>
         <translation>Серый</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>Negative</source>
         <translation>Негатив</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>&amp;Tools</source>
         <translation>И&amp;зображение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
         <source>Image size</source>
-        <translation>Размер изображение</translation>
+        <translation type="obsolete">Размер изображение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
         <source>Canvas size</source>
-        <translation>Размер холста</translation>
+        <translation type="obsolete">Размер холста</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>Rotate</source>
         <translation>Поворот</translation>
     </message>
@@ -330,81 +334,81 @@
         <translation type="obsolete">По часовой стрелке</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>Zoom</source>
         <translation>Изменение масштаба</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>Zoom In</source>
         <translation>Увеличить масштаб</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="357"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>Zoom Out</source>
         <translation>Уменьшить масштаб</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>Advanced Zoom...</source>
         <translation>Задать масштаб...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;About</source>
         <translation>&amp;Справка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>&amp;About EasyPaint</source>
         <translation>&amp;О EasyPaint</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>About Qt</source>
         <translation>О Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Enter zoom factor</source>
         <translation>Введите коэффициент масштабирования</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Zoom factor:</source>
         <translation>Коэффициент масштабирования:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
         <location filename="../mainwindow.cpp" line="682"/>
+        <location filename="../mainwindow.cpp" line="736"/>
         <source>Closing Tab...</source>
         <translation>Закрытие вкладки...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="630"/>
         <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="737"/>
         <source>File has been modified.
 Do you want to save changes?</source>
         <translation>Изображение было изменено.
 Хотите сохранить изменения?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="803"/>
+        <location filename="../mainwindow.cpp" line="857"/>
         <source>About EasyPaint</source>
         <translation>О EasyPaint</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="814"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>version</source>
         <translation>версия</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="814"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Site</source>
         <translation>Сайт</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="815"/>
+        <location filename="../mainwindow.cpp" line="869"/>
         <source>If you like &lt;b&gt;EasyPaint&lt;/b&gt; and you want to share your opinion, or send a bug report, or want to suggest new features, we are waiting for you on our &lt;a href=&quot;https://github.com/Gr1N/EasyPaint/issues?milestone=&amp;sort=created&amp;direction=desc&amp;state=open&quot;&gt;tracker&lt;/a&gt;.</source>
         <translation>Если вам понравится &lt;b&gt;EasyPaint&lt;/b&gt; и вы хотите поделиться своим мнением или сообщить об ошибке или предложить новые идеи, то мы вас ждем на нашем &lt;a href=\&quot;https://github.com/Gr1N/EasyPaint/issues?milestone=&amp;sort=created&amp;direction=desc&amp;state=open\&quot;&gt;трекере&lt;/a&gt;.</translation>
     </message>
@@ -413,7 +417,7 @@ Do you want to save changes?</source>
         <translation type="obsolete">Авторское право</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="814"/>
+        <location filename="../mainwindow.cpp" line="868"/>
         <source>Authors</source>
         <translation>Авторы</translation>
     </message>
@@ -512,32 +516,37 @@ Do you want to save changes?</source>
         <translation>Сохранять размер окна</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="87"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="88"/>
         <source>Ask canvas size on new image creation</source>
         <translation>Задание размера при создании нового изображения</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="85"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="92"/>
+        <source>Using native dialogs</source>
+        <translation>Использовать стандартные диалоги</translation>
+    </message>
+    <message>
+        <location filename="../dialogs/settingsdialog.cpp" line="96"/>
         <source>User interface</source>
         <translation>Интерфейс пользователя</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="88"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="99"/>
         <source>Base size:</source>
         <translation>Размер по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="101"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="112"/>
         <source>History depth:</source>
         <translation>Количество шагов:</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="107"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="118"/>
         <source>Autosave</source>
         <translation>Автосохрание</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="109"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="120"/>
         <source>Autosave interval (sec):</source>
         <translation>Интервал автосохранения (sec):</translation>
     </message>
@@ -546,28 +555,28 @@ Do you want to save changes?</source>
         <translation type="obsolete">Интервал автосохранения (msec):</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="134"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="145"/>
         <source>General</source>
         <translation>Основные</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="136"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="147"/>
         <source>Keyboard shortcuts</source>
         <translation>Клавиатура</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="142"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="153"/>
         <source>Command</source>
         <translation>Команда</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="142"/>
-        <location filename="../dialogs/settingsdialog.cpp" line="154"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="153"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="165"/>
         <source>Shortcut</source>
         <translation>Сочетание клавиш</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="158"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="169"/>
         <source>Key sequence:</source>
         <translation>Сочетение клавиш:</translation>
     </message>
@@ -576,7 +585,7 @@ Do you want to save changes?</source>
         <translation type="obsolete">Сбросить</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="172"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="183"/>
         <source>Keyboard</source>
         <translation>Клавиатура</translation>
     </message>
@@ -585,7 +594,7 @@ Do you want to save changes?</source>
         <translation type="obsolete">Интервал (мсек):</translation>
     </message>
     <message>
-        <location filename="../dialogs/settingsdialog.cpp" line="124"/>
+        <location filename="../dialogs/settingsdialog.cpp" line="135"/>
         <source>Image</source>
         <translation>Изображение</translation>
     </message>
@@ -681,14 +690,14 @@ Do you want to save changes?</source>
         <translation type="obsolete">Эллипс</translation>
     </message>
     <message>
-        <location filename="../widgets/toolbar.cpp" line="86"/>
-        <location filename="../widgets/toolbar.cpp" line="87"/>
+        <location filename="../widgets/toolbar.cpp" line="90"/>
+        <location filename="../widgets/toolbar.cpp" line="91"/>
         <source>Primary color</source>
         <translation>Основной цвет</translation>
     </message>
     <message>
-        <location filename="../widgets/toolbar.cpp" line="91"/>
-        <location filename="../widgets/toolbar.cpp" line="92"/>
+        <location filename="../widgets/toolbar.cpp" line="95"/>
+        <location filename="../widgets/toolbar.cpp" line="96"/>
         <source>Secondary color</source>
         <translation>Дополнительный цвет</translation>
     </message>
@@ -701,8 +710,8 @@ Do you want to save changes?</source>
         <translation type="obsolete">Второй цвет</translation>
     </message>
     <message>
-        <location filename="../widgets/toolbar.cpp" line="98"/>
-        <location filename="../widgets/toolbar.cpp" line="99"/>
+        <location filename="../widgets/toolbar.cpp" line="102"/>
+        <location filename="../widgets/toolbar.cpp" line="103"/>
         <source>Pen size</source>
         <translation>Размер пера</translation>
     </message>

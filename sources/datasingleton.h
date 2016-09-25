@@ -73,6 +73,10 @@ public:
     inline void setIsRestoreWindowSize(const bool &isRestoreWindowSize) { mIsRestoreWindowSize = isRestoreWindowSize; }
     inline bool getIsAskCanvasSize() { return mIsAskCanvasSize; }
     inline void setIsAskCanvasSize(const bool &isAskCanvasSize) { mIsAskCanvasSize = isAskCanvasSize; }
+
+    inline bool getUsingNativeDialog() { return m_usingNativeDialog; }
+    inline void setUsingNativeDialog(const bool &usingNativeDialog) { m_usingNativeDialog = usingNativeDialog; }
+
     inline bool getIsInitialized() { return mIsInitialized; }
     inline void setIsInitialized(const bool &isInitialized = true) { mIsInitialized = isInitialized; }
     inline QString getLastFilePath() { return mLastFilePath; }
@@ -115,6 +119,7 @@ private:
     QSize mBaseSize, mWindowSize;
     bool mIsAutoSave, mIsRestoreWindowSize, mIsAskCanvasSize, mIsInitialized;
     bool mIsResetCurve; /**< Needs to correct work of Bezier curve instrument */
+    bool m_usingNativeDialog;
     int mAutoSaveInterval, mHistoryDepth;
     QString mAppLanguage;
     QString mLastFilePath; /* last opened file */

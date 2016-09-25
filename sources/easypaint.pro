@@ -12,9 +12,10 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 }
 
 TARGET = easypaint
-VERSION = 0.1.1
+VERSION = 0.1.2
 TEMPLATE = app
 
+# разремить 4 строки
 DESTDIR = bin
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -38,6 +39,7 @@ SOURCES += main.cpp\
     instruments/abstractselection.cpp \
     instruments/pencilinstrument.cpp \
     instruments/lineinstrument.cpp \
+	instruments/arrowinstrument.cpp \
     instruments/eraserinstrument.cpp \
     instruments/rectangleinstrument.cpp \
     instruments/ellipseinstrument.cpp \
@@ -78,6 +80,7 @@ HEADERS  += mainwindow.h \
     instruments/abstractselection.h \
     instruments/pencilinstrument.h \
     instruments/lineinstrument.h \
+	instruments/arrowinstrument.h \
     instruments/eraserinstrument.h \
     instruments/rectangleinstrument.h \
     instruments/ellipseinstrument.h \

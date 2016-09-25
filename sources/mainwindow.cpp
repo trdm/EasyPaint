@@ -281,6 +281,13 @@ void MainWindow::initializeMainMenu()
     mInstrumentsMenu->addAction(mLineAction);
     mInstrumentsActMap.insert(LINE, mLineAction);
 
+    QAction *mArrowAction = new QAction(tr("Arrow"), this);
+    mArrowAction->setCheckable(true);
+    mArrowAction->setIcon(QIcon(":/media/instruments-icons/arrow.png")); //<< todo need pich
+    connect(mArrowAction, SIGNAL(triggered(bool)), this, SLOT(instumentsAct(bool)));
+    mInstrumentsMenu->addAction(mArrowAction);
+    mInstrumentsActMap.insert(ARROW, mArrowAction);
+
     QAction *mSprayAction = new QAction(tr("Spray"), this);
     mSprayAction->setCheckable(true);
     mSprayAction->setIcon(QIcon(":/media/instruments-icons/spray.png"));
@@ -600,6 +607,7 @@ void MainWindow::updateShortcuts()
     mInstrumentsActMap[MAGNIFIER]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Loupe"));
     mInstrumentsActMap[PEN]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Pen"));
     mInstrumentsActMap[LINE]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Line"));
+    mInstrumentsActMap[ARROW]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Arrow"));
     mInstrumentsActMap[SPRAY]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Spray"));
     mInstrumentsActMap[FILL]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Fill"));
     mInstrumentsActMap[RECTANGLE]->setShortcut(DataSingleton::Instance()->getInstrumentShortcutByKey("Rect"));
